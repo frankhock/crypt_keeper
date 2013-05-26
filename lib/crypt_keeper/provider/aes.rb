@@ -5,7 +5,7 @@ require 'base64'
 module CryptKeeper
   module Provider
     class Aes
-      SEPARATOR = ":crypt_keeper:"
+      SEPARATOR = ENV["base64_seperator"]
 
       # Public: The encryption key
       attr_accessor :key
